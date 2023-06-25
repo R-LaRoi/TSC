@@ -1,0 +1,47 @@
+.container{
+display:grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 2fr .5fr 1fr;
+grid-template-areas: 
+'header header header'
+'col1 col2 col3'
+'about about about'
+;
+
+
+}
+
+.header{
+grid-area: header;
+  background: rgb(181, 158, 165);
+}
+
+.col1{
+  grid-area: col1;
+  background-color: cadetblue;
+}
+
+.col2{
+
+grid-area: col2;
+  background-color: rgb(51, 100, 101);
+}
+
+.col3{
+
+  grid-area: col3;
+  background-color: rgb(8, 49, 49);
+}
+
+.about{
+
+  grid-area: about;
+    background-color: rgb(54, 59, 59);
+}
+
+ul{
+
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
