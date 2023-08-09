@@ -103,12 +103,14 @@ a {
   padding: 0px;
   border-radius: 20px;
   text-align: center;
-  color: #625d5dbe;
+  color: #907367;
 }
-
+.consult {
+  display: none;
+}
 .one {
   color: #ffffff;
-  background-color: #ccbaaa;
+  background-color: rgba(198, 173, 149, 0.395);
   padding-bottom: 90px;
   /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
@@ -122,7 +124,8 @@ a {
 
 .three {
   color: #625d5dbe;
-  background-color: rgba(200, 161, 156, 0.767);
+  background-color: #a6928d85;
+  /* background-color: rgba(200, 161, 156, 0.767); */
 }
 
 .about {
@@ -234,16 +237,51 @@ ul {
   line-height: 1.5;
 }
 
+.sb-serv {
+  line-height: 1.5;
+  font-size: 1rem;
+  margin-top: 0px;
+  color: #6f6f6f;
+  font-weight: 400;
+}
 #connect {
   background-color: #fdf2e8;
 }
+#video {
+  display: none;
+}
 
+.pkg-one {
+  font-weight: 800;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  line-height: 2;
+  padding-bottom: 34px;
+  color: #9073679c;
+}
+
+.consult {
+  display: none;
+}
+
+.services {
+  display: none;
+}
 @media screen and (max-width: 500px) {
+  button {
+    background-color: #fdfdfd;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    color: #ccbaaa;
+  }
+
   .about {
     display: grid;
     grid-template-columns: 1fr;
     background-color: white;
     padding: 10px;
+    height: 75vh;
   }
 
   .name {
@@ -251,18 +289,22 @@ ul {
   }
 
   .column {
-    width: 250px;
-    height: 350px;
-    border-radius: 10px;
-    position: relative;
-    left: 10px;
+    display: none;
+  }
+  #video {
+    display: block;
+    width: 100%;
   }
 
+  .consult {
+    display: block;
+    width: 100%;
+  }
   .hero-overlay {
     position: relative;
-    top: 250px;
+    bottom: 350px;
     font-size: 3rem;
-    color: rgba(87, 69, 91, 0.706);
+    color: rgb(229, 229, 229);
     font-weight: 800;
     line-height: 1;
     /* left: 20px; */
@@ -270,37 +312,78 @@ ul {
 
   .sub-text {
     width: 280px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     position: relative;
-    top: 30px;
+    top: 40px;
+    left: 50px;
     line-height: 1.3;
     text-align: center;
     font-family: "Poppins", sans-serif;
-    color: #535251;
+    color: #6e6d6b;
   }
 
   .card {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+    /* margin-bottom: 30px; */
+    width: 100%;
     border-radius: 0px;
-    padding-bottom: 80px;
+    padding-bottom: 20px;
     align-items: center;
+    background-color: ccbaaa;
+    height: 80vh;
+    font-size: 1rem;
   }
 
   .about-img {
+    display: none;
     margin-top: 70px;
     margin-left: 50px;
     width: 110%;
   }
+  .tab {
+    display: block;
+    position: relative;
+    top: 50px;
+    z-index: 9;
+    background-color: #483836;
+  }
 
+  .two {
+    color: #625d5dbe;
+    background-color: #ffffff;
+    /* background-color: #a6928de0; */
+  }
   .services {
+    display: block;
+    background-color: #ccbaaa54;
     margin-top: 0px;
-    padding: 0px;
+    color: #f7f3f3;
+    color: #7d685fbf;
+    text-align: center;
+  }
+
+  .pkg {
+    font-weight: 800;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+  }
+  .title-serv {
+    font-weight: 800;
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+  }
+  .pg-serv {
+    line-height: 1.5;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 1rem;
+    margin-top: 0px;
+    height: 300px;
+    font-weight: 200;
   }
   .serv-grid {
     grid-template-columns: 1fr;
-    gap: 0px;
+    gap: 10px;
+    padding: 10px;
   }
 
   .dsk-img {
@@ -308,11 +391,11 @@ ul {
   }
 
   .header {
-    height: 100vh;
-    background-image: url("./mbImg.jpg");
-    background-repeat: no-repeat;
+    height: 80vh;
+    /* background-image: url("./mbImg.jpg"); */
+    /* background-repeat: no-repeat;
     background-size: cover;
-    background-position-x: 70%;
+    background-position-x: 70%; */
   }
 
   ul {
@@ -366,5 +449,13 @@ ul {
     list-style: none;
     color: #7a7372;
     position: relative;
+  }
+
+  .initial {
+    font-weight: 800;
+    position: relative;
+    float: right;
+    top: 20px;
+    font-size: 1rem;
   }
 }
