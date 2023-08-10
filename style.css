@@ -118,13 +118,13 @@ a {
 
 .two {
   color: #625d5dbe;
-  background-color: #efe4d7;
+  /* background-color: #efe4d7; */
   /* background-color: #e4beb4e0; */
 }
 
 .three {
   color: #625d5dbe;
-  background-color: #a6928d85;
+  /* background-color: #a6928d85; */
   /* background-color: rgba(200, 161, 156, 0.767); */
 }
 
@@ -214,13 +214,19 @@ ul {
   text-align: center;
 }
 
+.trupti {
+  position: relative;
+  left: 150px;
+  width: 50%;
+  border-radius: 10px;
+}
 .square {
-  background-color: #e4beb4e0;
+  /* background-color: #e4beb4e0;
   height: 300px;
   width: 300px;
   border-radius: 20px;
   padding: 20px;
-  margin-left: 30%;
+  margin-left: 30%; */
 }
 
 .abt-pg {
@@ -233,7 +239,7 @@ ul {
 .abt-txt {
   font-family: "Poppins", sans-serif;
   font-weight: 200;
-  width: 500px;
+  /* width: 500px; */
   line-height: 1.5;
 }
 
@@ -255,8 +261,7 @@ ul {
   font-weight: 800;
   font-size: 1.6rem;
   letter-spacing: 1px;
-  line-height: 2;
-  padding-bottom: 34px;
+  padding-bottom: 25px;
   color: #9073679c;
 }
 
@@ -267,8 +272,16 @@ ul {
 .services {
   display: none;
 }
+
 @media screen and (max-width: 500px) {
+  .sv-icon {
+    /* position: relative;
+    bottom: 30px; */
+  }
+
   button {
+    position: relative;
+    bottom: 130px;
     background-color: #fdfdfd;
     border: none;
     padding: 20px;
@@ -279,9 +292,10 @@ ul {
   .about {
     display: grid;
     grid-template-columns: 1fr;
-    background-color: white;
-    padding: 10px;
-    height: 75vh;
+    /* background-color: #fdf2e8; */
+    padding: 0px;
+    position: relative;
+    height: 80vh;
   }
 
   .name {
@@ -314,7 +328,7 @@ ul {
     width: 280px;
     font-size: 1rem;
     position: relative;
-    top: 40px;
+    top: 50px;
     left: 50px;
     line-height: 1.3;
     text-align: center;
@@ -325,19 +339,20 @@ ul {
   .card {
     /* margin-bottom: 30px; */
     width: 100%;
-    border-radius: 0px;
+    border-radius: 10px;
     padding-bottom: 20px;
     align-items: center;
-    background-color: ccbaaa;
-    height: 80vh;
+    background-color: rgb(245, 245, 245);
+    height: 70vh;
     font-size: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   }
 
   .about-img {
     display: none;
-    margin-top: 70px;
-    margin-left: 50px;
-    width: 110%;
+    /* margin-top: 70px; */
+    /* margin-left: 50px; */
   }
   .tab {
     display: block;
@@ -349,15 +364,13 @@ ul {
 
   .two {
     color: #625d5dbe;
-    background-color: #ffffff;
-    /* background-color: #a6928de0; */
   }
   .services {
+    padding-top: 20px;
     display: block;
-    background-color: #ccbaaa54;
     margin-top: 0px;
-    color: #f7f3f3;
-    color: #7d685fbf;
+    background-color: #e4beb4e0;
+    color: #6f624ef0;
     text-align: center;
   }
 
@@ -370,6 +383,7 @@ ul {
     font-weight: 800;
     font-size: 1.5rem;
     font-family: "Poppins", sans-serif;
+    padding-top: 80px;
   }
   .pg-serv {
     line-height: 1.5;
@@ -384,6 +398,7 @@ ul {
     grid-template-columns: 1fr;
     gap: 10px;
     padding: 10px;
+    background-color: #f5e5de;
   }
 
   .dsk-img {
@@ -392,10 +407,6 @@ ul {
 
   .header {
     height: 80vh;
-    /* background-image: url("./mbImg.jpg"); */
-    /* background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: 70%; */
   }
 
   ul {
@@ -413,7 +424,6 @@ ul {
     color: #5e5a59;
     text-align: center;
     background-color: transparent;
-    width: 370px;
   }
 
   #connect {
@@ -425,16 +435,19 @@ ul {
   }
 
   .square {
-    background-color: #e4beb4e0;
-    height: 200px;
-    width: 200px;
-    border-radius: 20px;
+    background-color: #cdb1abfd;
     padding: 30px;
-    margin-left: 5%;
+    position: relative;
+    bottom: 20px;
+    color: white;
+    font-weight: 800;
   }
 
   .trupti {
-    width: 300px;
+    position: relative;
+    left: 0px;
+    width: 100%;
+    border-radius: 0px;
   }
 
   footer {
@@ -457,5 +470,11 @@ ul {
     float: right;
     top: 20px;
     font-size: 1rem;
+  }
+
+  .ft-connect {
+    height: 50px;
+    position: relative;
+    top: 370px;
   }
 }
