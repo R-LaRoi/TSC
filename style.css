@@ -132,13 +132,19 @@ a {
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: #fdf2e8;
+
   /* 
-  padding: 4rem 4rem;
+
   color: #483836; */
 }
+
+.col-1 {
+  background-color: #fdf2e8;
+  padding: 4rem;
+}
 .col-2 {
-  background-color: rgba(223, 182, 176, 0.767);
+  padding: 5rem;
+  background-color: #ddcecc;
 }
 
 ul {
@@ -209,8 +215,6 @@ ul {
   color: rgb(246, 184, 102);
 }
 
-.abt-form {
-}
 .pkg {
   color: #ffffff;
   font-weight: 400;
@@ -235,11 +239,40 @@ ul {
   margin-left: 30%; */
 }
 
+.abt-form {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  width: 400px;
+  color: #5e5a59;
+  background-color: #fdf2e8;
+  border-radius: 20px;
+  padding: 3rem;
+  /* text-align: center; */
+}
+input,
+textarea {
+  height: 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f2e9e1;
+
+  width: 350px;
+}
+
+label {
+  font-size: 0.6rem;
+}
+
+textarea {
+  height: 120px;
+}
+
 .abt-pg {
   display: grid;
   grid-template-columns: 1fr 1fr;
   z-index: 1;
   position: relative;
+  margin-top: -2rem;
 }
 
 .abt-txt {
@@ -333,12 +366,14 @@ ul {
   .about {
     display: grid;
     grid-template-columns: 1fr;
-    background-color: #fdf2e8;
     padding: 0px;
     position: relative;
     height: 80vh;
+    align-items: center;
   }
-
+  .abt-form {
+    text-align: center;
+  }
   .name {
     display: none;
   }
@@ -464,7 +499,7 @@ ul {
   .abt-txt {
     line-height: 1.5;
     color: #5e5a59;
-    /* text-align: center; */
+    text-align: center;
     /* background-color: transparent;
     background-color: #fff0e3; */
     padding: 3.5rem;
