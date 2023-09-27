@@ -24,7 +24,7 @@ img {
 nav {
   position: fixed;
   z-index: 9;
-  padding: 10px;
+  padding: 5px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   width: 100%;
@@ -32,14 +32,6 @@ nav {
   display: flex;
   justify-content: baseline;
 }
-
-/* footer {
-  color: #b3a394;
-  height: 100px;
-  z-index: 9;
-  padding: 30px;
-  background-color: #efe4d7;
-} */
 
 .ft-text {
   font-size: 0.7rem;
@@ -139,11 +131,13 @@ a {
 }
 
 .col-1 {
+  width: 100%;
   background-color: #fdf2e8;
-  padding: 4rem;
+  /* padding: 4rem; */
 }
 .col-2 {
   padding: 5rem;
+  width: 100%;
   background-color: #ddcecc;
 }
 
@@ -197,8 +191,7 @@ ul {
   font-family: "Poppins", sans-serif;
 
   font-size: 1rem;
-  /* position: relative; */
-  /* top: 130px; */
+
   line-height: 1.5;
   color: #6e6d6b;
   font-weight: 200;
@@ -225,18 +218,12 @@ ul {
 
 .trupti {
   position: relative;
-  /* left: 150px; */
+
   width: 40%;
   border-radius: 50%;
 }
 .square {
   display: none;
-  /* background-color: #e4beb4e0;
-  height: 300px;
-  width: 300px;
-  border-radius: 20px;
-  padding: 20px;
-  margin-left: 30%; */
 }
 
 .abt-form {
@@ -246,8 +233,8 @@ ul {
   color: #5e5a59;
   background-color: #fdf2e8;
   border-radius: 20px;
-  padding: 3rem;
-  /* text-align: center; */
+  padding: 2rem;
+  text-align: center;
 }
 input,
 textarea {
@@ -255,7 +242,7 @@ textarea {
   border-radius: 5px;
   border: none;
   background-color: #f2e9e1;
-
+  padding: 8px;
   width: 350px;
 }
 
@@ -272,13 +259,13 @@ textarea {
   grid-template-columns: 1fr 1fr;
   z-index: 1;
   position: relative;
-  margin-top: -2rem;
+  margin-top: 0px;
 }
 
 .abt-txt {
   font-family: "Poppins", sans-serif;
   font-weight: 200;
-  width: 400px;
+  /* width: 400px; */
   line-height: 1.5;
   font-size: 0.8rem;
 }
@@ -348,6 +335,10 @@ textarea {
 }
 
 @media screen and (max-width: 500px) {
+  .col-2 {
+    padding: 0px;
+  }
+
   .sv-icon {
     /* position: relative;
     bottom: 30px; */
@@ -358,7 +349,7 @@ textarea {
     bottom: 130px;
     background-color: #fdfdfd;
     border: none;
-    padding: 20px;
+    padding: 0px;
     border-radius: 10px;
     color: #ccbaaa;
   }
@@ -368,11 +359,19 @@ textarea {
     grid-template-columns: 1fr;
     padding: 0px;
     position: relative;
-    height: 80vh;
+    height: 100vh;
     align-items: center;
   }
   .abt-form {
+    width: 290px;
     text-align: center;
+    margin-left: 25px;
+    margin-top: 20px;
+  }
+
+  input,
+  textarea {
+    width: 270px;
   }
   .name {
     display: none;
@@ -500,40 +499,15 @@ textarea {
     line-height: 1.5;
     color: #5e5a59;
     text-align: center;
-    /* background-color: transparent;
-    background-color: #fff0e3; */
-    padding: 3.5rem;
+
+    padding: 1.5rem;
   }
-
-  /* #connect {
-    padding-top: 30%;
-    width: 350px;
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
-  } */
-
-  /* .square {
-    background-color: #cdb1abfd;
-    padding: 5rem;
-    position: relative;
-    color: white;
-    font-weight: 800;
-    text-align: center;
-    display: block;
-  } */
 
   .trupti {
     width: 50%;
     position: relative;
     left: 0px;
   }
-
-  /* footer {
-    font-size: 1rem;
-    text-align: center;
-    color: #9e9083;
-  } */
 
   ul {
     display: flex;
@@ -549,11 +523,6 @@ textarea {
     float: right;
     top: 20px;
     font-size: 1rem;
+    padding-bottom: 30px;
   }
-
-  /* .ft-connect {
-    height: 50px;
-    position: relative;
-    top: 370px;
-  } */
 }
